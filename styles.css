@@ -142,3 +142,16 @@ footer {
         font-size: 1.2rem;
     }
 }
+
+/* Add this to your styles.css */
+.dashboard-page .navbar {
+    margin-bottom: 30px; /* Space between navbar and the Light Mode image */
+}
+
+.dashboard-page .image {
+    margin-bottom: 30px; /* Space between Light Mode image and Dark Mode image */
+}
+
+
+
+
