@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background for the entire page */
+    color: #fff; /* Text color to ensure readability against the black background */
+}
+
+.navbar {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.nav-link:hover,
+.nav-link:focus {
+    color: #ff4040;
+}
+
+.navbar-brand,
+.nav-link {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+    color: #ff4040;
+}
+
+footer {
+    background-color: #000;
+    padding: 20px 0;
+    color: #fff;
+    margin-top: 100px; /* Increase space between contact section and footer */
+}
+
+/* Contact Page Styles */
+#contact {
+    padding: 50px 20px;
+    background-color: #000; /* Ensure the contact section has a black background */
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 70px;
+    
+    font-family: 'Courier New', Courier, monospace; /* Adjusted font size */
+    color: #fff;
+}
+
+form {
+    background-color: #1a1a1a; /* Slightly lighter black for contrast */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+form .form-control {
+    border-radius: 5px;
+}
+
+form .btn-primary {
+    background-color: #ff4040;
+    border-color: #ff4040;
+}
+
+form .btn-primary:hover,
+form .btn-primary:focus {
+    background-color: #e03e3e;
+    border-color: #e03e3e;
+}
+
+.help-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a; /* Slightly lighter black for contrast */
+    height: 100%; /* Full height of the column */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.help-heading {
+    font-size: 3rem; /* Larger font size */
+    text-align: center;
+    color: #fff;
+    margin: 0;
+}
+
+@media (max-width: 767.98px) {
+    #contact {
+        padding: 30px 15px;
+    }
+}

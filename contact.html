@@ -8,11 +8,12 @@
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="contact.css">
 </head>
 <body>
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top">
-    <a class="navbar-brand" href="#">Samuel Oyeniran</a>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="index.html">Samuel Oyeniran</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,23 +34,55 @@
 
   <!-- Contact Section -->
   <section id="contact" class="container mt-5">
-    <h2>Contact Me</h2>
-    <p>If you have any questions or would like to get in touch, please fill out the form below:</p>
-    <form>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name" placeholder="Your Name">
+    <div class="row">
+      <div class="col-md-6">
+        
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label for="services">How do you think we could help?</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service1" value="Mobile App Design">
+              <label class="form-check-label" for="service1">Mobile App Design</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service2" value="Mobile App Development">
+              <label class="form-check-label" for="service2">Mobile App Development</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service3" value="Branding">
+              <label class="form-check-label" for="service3">Branding</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service4" value="Website">
+              <label class="form-check-label" for="service4">Website</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="service5" value="UX/UI Design">
+              <label class="form-check-label" for="service5">UX/UI Design</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
       </div>
-      <div class="form-group">
-        <label for="email">Email address</label>
-        <input type="email" class="form-control" id="email" placeholder="Your Email">
+      
+      <div class="col-md-6">
+        <div class="help-box">
+          <h2>Lets start a project together</h2>
+        </div>
       </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Send Message</button>
-    </form>
+    </div>
   </section>
 
   <!-- Footer -->
