@@ -2,8 +2,57 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.navbar-brand {
+.navbar {
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus,
+.nav-link:hover,
+.nav-link:focus {
+    color: #ff4040;
+}
+
+.navbar-brand,
+.nav-link {
     font-size: 1.5rem;
+    color: #fff;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .nav-link:focus {
+    color: #ff4040;
+}
+
+.sentence {
+    display: block; /* Ensures each sentence appears on a new line */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Define colors for each sentence on hover */
+.sentence:nth-of-type(1):hover {
+    color: #ff4040; /* Red color on hover */
+}
+
+.sentence:nth-of-type(2):hover {
+    color: #40ff40; /* Green color on hover */
+}
+
+.sentence:nth-of-type(3):hover {
+    color: #4040ff; /* Blue color on hover */
+}
+
+.sentence:nth-of-type(4):hover {
+    color: #ff40ff; /* Purple color on hover */
+}
+
+.sentence:nth-of-type(5):hover {
+    color: #40ffff; /* Cyan color on hover */
 }
 
 .hero-section {
@@ -26,9 +75,13 @@ body {
     margin-bottom: 30px;
 }
 
-.hero-section .btn-primary {
+.hero-section .btn-primary:hover,
+.hero-section .btn-primary:focus {
     background-color: #ff4040;
     border-color: #ff4040;
+}
+
+.hero-section .btn-primary {
     color: #fff;
 }
 
@@ -40,42 +93,35 @@ footer {
 
 /* Portfolio Section */
 #portfolio {
+    padding: 50px 20px; /* Adds padding to the top, bottom, and sides of the section */
     transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-}
-
-#portfolio:hover {
-    background-color: #f8f9fa; /* Light background color on hover */
-    transform: scale(1.02); /* Slightly enlarge the section */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-}
-
-#portfolio h2 {
-    transition: color 0.3s;
-}
-
-#portfolio:hover h2 {
-    color: #007bff; /* Change to any color you like */
-}
-
-/* Image Container Styling */
-.img-container {
-    margin-top: 70px; /* Top margin for the container */
 }
 
 /* Image Grid Styling */
 .image-grid {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allows items to wrap if there's not enough space */
     gap: 30px; /* Space between items */
+    padding: 0 20px; /* Adds padding to the sides */
+    margin: 0 auto; /* Centers the grid within the section */
 }
 
 /* Individual Image Container Styling */
 .image-container {
+    flex: 1 1 300px; /* Allows the container to grow and shrink, with a base width of 300px */
+    max-width: 300px; /* Ensures that the container does not exceed 300px */
+    margin: 0 15px; /* Adds margin to space out the containers */
     position: relative;
-    width: 100%;
-    max-width: 300px; /* Adjust as needed */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for hover effects */
 }
 
+/* Hover effect for bubble */
+.image-container:hover {
+    transform: scale(1.1); /* Slightly enlarge the container */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add shadow to create a bubble effect */
+}
+
+/* Image Styling */
 .image {
     width: 100%;
     height: auto;
@@ -143,7 +189,6 @@ footer {
     }
 }
 
-/* Add this to your styles.css */
 .dashboard-page .navbar {
     margin-bottom: 30px; /* Space between navbar and the Light Mode image */
 }
@@ -151,7 +196,3 @@ footer {
 .dashboard-page .image {
     margin-bottom: 30px; /* Space between Light Mode image and Dark Mode image */
 }
-
-
-
-
