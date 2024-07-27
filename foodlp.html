@@ -11,7 +11,7 @@
 </head>
 <body class="dashboard-page">
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <nav class="navbar navbar-expand-lg fixed-top">
     <a class="navbar-brand" href="#">Samuel Oyeniran</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -19,23 +19,32 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#portfolio">Work</a>
+          <a class="nav-link" href="index.html#portfolio">Work</a>
         </li>
+        
         <li class="nav-item">
-          <a class="nav-link" href="#about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">Contact</a>
+          <a class="nav-link" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 
-  <img class="image" src="food display.jpg" alt="Jobful Dashboard"> 
-  <img class="image" src="MENU.jpg" alt="Jobful Dashboard">
-  <img class="image" src="SERVICES & REVIEW.jpg" alt="Jobful Dashboard">
-  <img class="image" src="ABOUT US.jpg" alt="Jobful Dashboard">
-  <img class="image" src="Contact & Footer.jpg" alt="Jobful Dashboard">
+  <div class="container mt-5 pt-5">
+    <img class="image mb-4" src="photos/food display.jpg" alt="Restaurant Landing Page">
+    <img class="image mb-4" src="photos/MENU.jpg" alt="Menu">
+    <img class="image mb-4" src="photos/SERVICES & REVIEW.jpg" alt="Services and Review">
+    <img class="image mb-4" src="photos/ABOUT US.jpg" alt="About Us">
+    <img class="image mb-4" src="photos/Contact & Footer.jpg" alt="Contact and Footer">
+  </div>
 
+  <!-- Footer -->
+  <footer class="bg-dark text-center py-3 text-white">
+    <p>&copy; 2024 Samuel Oyeniran. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

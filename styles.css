@@ -189,6 +189,11 @@ footer {
     }
 }
 
+/* Add this rule for dashboard page background */
+.dashboard-page {
+    background-color: #000;
+}
+
 .dashboard-page .navbar {
     margin-bottom: 30px; /* Space between navbar and the Light Mode image */
 }
